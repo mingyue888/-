@@ -1,0 +1,50 @@
+/*
+* @Author: anchen
+* @Date:   2017-09-20 01:42:15
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-09-25 20:06:13
+*/
+
+/* 导航背景*/
+            #header{width:100%;height:80px;position:fixed;border-bottom:2px solid rgb(97, 184, 80);}
+    /* 导航部分*/
+        /* 主导航 */
+            #header>.container>.header-nav>div>a{color:rgb(255,255,255);display:inline-block;height:80px;line-height:80px;
+                text-decoration:none;}
+            #header>.container>.header-nav>div:not(:nth-child(2))>a:hover{color:#61B850;border-bottom:2px solid rgba(241,140,27,1);}
+            #header>.container>.header-nav>div:not(:nth-child(2))>a{margin-right:25px;}
+            /* 左 */
+            #header>.container>.header-nav>div:first-child{text-align:right;width:40%;}
+            #header>.container>.header-nav>div:first-child>a{margin-right:30px;}
+            /* 右 */
+            #header>.container>.header-nav>div:last-child{text-align:left;width:40%;}
+            /* #header>.container>.header-nav>div:last-child>a:last-child{margin-right:0;} */
+            /* 中 */
+            #header>.container>.header-nav>div:nth-child(2){text-align:center;min-height:80px;width:20%;padding-top:10px;}
+        /* 二级导航 */
+            /* 上内边距  高度*/
+            #header-top1{width: 100%;}
+        /* banner下方内容 */
+        #btnner-btm{padding-top:8%;padding-bottom: 8%;text-align:center;}
+        #btnner-btm>.row>div>div>h4{font-weight: 700; letter-spacing: 4px;text-align:center;color:rgb(51, 51, 51);margin-bottom:10px;}
+        #btnner-btm>.row>div>div>p{margin-bottom:1.5%;}
+
+/* 公共样式 */
+                .header{background-color:rgba(0,0,0,0.498039);z-index:5;}
+                #header span{color:#63B354;}
+                #header i{color:rgb(97, 184, 80);font-size:22px;border-radius:20px;border:2px solid #61B850;
+                         padding-left: 8px;padding-right:6px;margin-bottom: 8px;}
+                .position{background-color:rgba(0,0,0,0.498039);
+                        overflow: hidden;height: 90px;}
+                .center{text-align:center;}
+                .right{float:right;}
+                .bai{color:#fff;}
+                .em2{line-height:2em;}
+                 /* 首页标题样式 */
+                .heading{font-weight:700;margin-bottom:10px;color:rgb(51, 51, 51);text-align:center;letter-spacing:4px;}
+        /* 首页P标签样式 */
+                .paragraph{text-transform:uppercase;font-family:'Microsoft YaHei';font-weight:normal;color:rgb(184, 184, 184);text-align:center;margin:0 0 10px;}
+         /* 首页蓝色方块 */
+                .linkblock{min-height: 3px;min-width: 40px;margin-bottom:5%;background-color:rgba(97,184,80,1);display:inline-block;}
+                h4{font-size:18px;font-weight:500;margin-top:10px;line-height:1.1;}
+                h3{font-size:24px;min-height:10px;min-width:10px;font-family:"Microsoft YaHei","Hiragino Sans GB",SimHei,STHeiti;margin-top:20px;}

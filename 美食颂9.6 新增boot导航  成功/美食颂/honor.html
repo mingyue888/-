@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- 1、指定基础语言 -->
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <!--2、指定视口信息-->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--3、指定跨IE浏览器兼容性-->
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title></title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="font/css/font.css" />
+    <!-- <link rel="stylesheet" href="css/reset.css" /> -->
+
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- PC端导航样式 -->
+    <link rel="stylesheet" href="css/header.css" />
+    <!--页脚样式-->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 移动端导航样式 -->
+    <link rel="stylesheet" href="css/phone.css" />
+    <!-- 本页样式 -->
+    <link rel="stylesheet" href="css/honor.css" />
+
+</head>
+<body>
+<!-- 页头 -->
+<div  class="header"></div>
+<!-- 顶部大图 -->
+    <div class="container-fluid img-top1">
+        <div class="row">
+            <div>
+            <!-- 这里是手机端响应式按钮菜单 -->
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--企业荣誉-->
+        <div class="row qyyy ">
+            <div class="col-md-12 qyyy1">
+                <h3 class="heading">企业荣誉</h3>
+                <p class="paragraph" style="text-transform:uppercase;">Company honor</p>
+                <a href="javascript:;" class="linkblock"></a>
+                <p class="qyyy-p-1">以“品味全球美食，颂响健康生活”为企业精神，致力于都市高端团膳的尚品生活，融汇世界各国美食之精华，以菜色精致、好吃、服务好、风格高雅、管理专业着称，开辟了团膳行业经营新天地。</p>
+                <p style="text-transform:uppercase;">Food and beverage industry, its main content is engaged in the trade organizations (such as restaurants, hotels, food processing plants) or individual foods through processing.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!--五副透明图-->
+        <div class="row img-fluid">
+            <div class="col-md-4 img-fluid-1"></div>
+            <div class="col-md-4 img-fluid-1"></div>
+            <div class="col-md-4 img-fluid-1"></div>
+            <div class="col-md-4 img-fluid-1"></div>
+            <div class="col-md-4 img-fluid-1"></div>
+            <h3 class="h3-fluid" style="text-transform:uppercase;">Company honor</h3>
+        </div>
+
+    </div>
+    <!--下方企业荣誉-->
+        <div class="container-fluid qyyy-container-fluid">
+                <div  class="container   qyyy-container">
+                    <div class="row ">
+                        <h3>企业荣誉</h3>
+                        <div class="container">
+                            <div class="col-md-3 col-xs-12 qyyy-buttom-img1" style="border:1px solid red;">
+                                <div class="qyyy-bg-img-1"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            <!--</div>-->
+        </div>
+<!-- 页尾 -->
+<div class="footer"></div>
+<br/>
+<!--6、引入行为依赖文件-->
+<script src="bootstrap/js/jquery-1.11.3.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<!--7、引入测试js文件-->
+<!--  <script src="bootstrap/js/bootlint.js"></script> -->
+<script>
+    $(".header").load("html/header.html");
+    $(".footer").load("html/footer.html");
+    bootlint.showLintReportForCurrentDocument([]);
+</script>
+</body>
+</html>

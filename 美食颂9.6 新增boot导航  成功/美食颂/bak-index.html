@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- 引入boot -->
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="a.css" />
+        <!-- <link rel="stylesheet" href="styles.css" /> -->
+        <style>
+        /* 导航条 */
+            nav{width:100%;height:80px;position:fixed;background-color:#000;
+            background-color:rgba(0,0,0,0.498039);z-index:5;
+            border-bottom-color:rgb(97, 184, 80);border-bottom-width:2px;border-bottom-style:solid;
+            }
+            nav>div{margin:0 auto;width:996px;height:80px;}
+            /* 右对齐*/
+            nav>div>ul:first-child>li>a{text-align:left;margin-right:32px;}
+            /* 左对齐 */
+            nav>div>ul:last-child>li>a{text-align:right;margin-right:24px;}
+            /* 去除右ul最后一个a标签 右边距 */
+            nav>div>ul:last-child>li:last-child>a{margin-right:0px;}
+            nav>div>ul>li>a{color:rgb(255,255,255);display:inline-block;height:80px;line-height:80px;text-decoration:none;opacity:1;}
+            nav>div>ul>li>a:hover{color:#61B850;
+            border-bottom-color:rgba(241,140,27,1);border-bottom-width:2px;border-bottom-style:solid;
+            }
+            /* logo 上外边距*/
+            nav>div>a{margin-top:11px;margin-left:40px;margin-right:86px;}
+            /* 导航内部三块全部浮动 */
+            nav>div>ul,nav>div>ul>li,nav>div>a,nav>div>ul>li>a{float:left;overflow:hidden;}
+            /* 公共样式 */
+            fl{float:left;}
+            fr{float:right;}
+/*             .clear:after{clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}
+ */
+
+
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">关于美食颂</a></li>
+                    <li><a href="#">新闻中心</a></li>
+                    <li><a href="#">产品展示</a></li>
+                </ul>
+                <a href="#"><img src="img/logo.png"/></a>
+                <ul>
+                    <li><a href="#">供应链体系</a></li>
+                    <li><a href="#">社会责任</a></li>
+                    <li><a href="#">合伙人计划</a></li>
+                    <li><a href="#">加入美食颂</a></li>
+                </ul>
+            </div>
+        </nav>
+        <button class="btn btn-success">asdasdasd</button>
+
+
+
+        <script src="bootstrap/js/jquery-1.11.3.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+/* 导航背景颜色 */
+.navbar-header,.navbar-fixed-top{background:#fff;}
+/* LOGO做内边距 */
+.navbar-brand{padding:0px 0px 0px 30px;}
+/* 汉堡包按钮颜色 */
+.span_color{background-color:#61B850!important;}
+/* 汉堡包按钮边框 */
+.nav_border{border:0!important;}
+/* 汉堡包按钮 鼠标移入 和 获得焦点事件 */
+.navbar-toggle:hover,.navbar-toggle:focus{background:transparent !important;}
+/* 下拉菜单hover样式 */
+@media(max-width:767px){
+    .menu:hover{color:#f18c1b !important;}
+}
+/* PC端隐藏 */
+@media(min-width:768px){
+    #nav{display: none !important;}
+}

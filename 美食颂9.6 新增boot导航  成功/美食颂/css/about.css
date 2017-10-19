@@ -1,0 +1,56 @@
+/*
+* @Author: anchen
+* @Date:   2017-09-20 14:42:14
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-09-22 16:53:44
+*/
+div[class="row"]{padding:0;}
+.img-top1{
+        background: url('../img/about-imgtop1.jpg')no-repeat fixed;
+        background-size:cover;
+        background-position:50% 200%;
+        background-position-x:50%;
+        background-position-y:200%;
+        height:42%;min-height:80px;}
+.qyjj1{padding:8% 0%;}
+.video1{height:500px;padding-top:17%;border-top:1px solid rgb(189, 189, 189);border-bottom:1px solid rgb(189, 189, 189);}
+.play{display: inline-block;font:normal normal normal 14px/1 FontAwesome;color:#61b850;font-size:50px;}
+.div1{height:150px;}
+/*ÆóÒµÈÙÓþ*/
+.qyyy1{height:70%;background:url("../img/about-imgtop2.jpg")no-repeat;background-size:cover;background-position:50% 50%;
+        width:100%;position: relative;}
+
+/*µÚÒ»¿ò*/
+.qyyy1-1{width:70%;height:650px;margin-top:-15%;padding-right:10%;padding-left:10%;
+        background:rgba(97,184,80,1);padding-top:6%;}
+.qyyy-1-p1{font-size:16px;text-align: justify;color: #fff;margin-bottom: 10%;}
+.qyyy-1-2{text-align:left;min-height:35px;border-bottom:1px solid #fff;}
+.qyyy-1-2>a{text-decoration: none;color:#61B850;background: #fff;border-radius:0;float:right;}
+/*µÚ¶þ¿ò*/
+.qyyy2-1{width:35%;height: 360px;
+    display:inline-block;
+    float:right;
+    margin:15% 0px 5px auto;
+    left:30px;right:0px;top:7%;position: absolute;
+    text-align:center;padding-top:20%;
+        background:url('../img/qyjj3.jpg') no-repeat 50% 50%;
+        background-size:cover;}
+.qyyy{position:relative;}
+    /* 团队建设 */
+.tdjs{display:inline-block;padding:11px 20px;color:#fff;border:1px solid #fff;background:rgb(97,184,80);}
+         /* 企业理念 */
+.qyll{width:20%;min-height:50px;display:block;
+    border-right:5px solid  rgb(97, 184, 80);
+    color:rgb(110, 110, 110);text-align:left;
+    margin-bottom: 5%;}
+    /* 愿景 */
+.qyll-top{padding:8% 0px;}
+    /* 左边愿景文字部分 */
+.yj-padding{padding-left:0;}
+.yj1{margin-top:0px;color:rgb(110, 110, 110);font-size:16px;text-align:left;line-height: 1.8em;}
+  /* 右侧愿景图片部分 */
+.yj2{background:url('../img/about-qyyj1.jpg')no-repeat 50% 50%;background-size:cover;height:280px;padding-top:28.3%;}
+
+.yj2-text{height:120px;background:rgba(97,184,80,0.8);margin-top:auto;padding:10px 0px 0px 15px;}
+
+.yj2-text>h4{color:#fff;}

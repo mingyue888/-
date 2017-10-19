@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 1、指定基础语言 -->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--3、指定跨IE浏览器兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="font/css/font.css" />
+<!-- <link rel="stylesheet" href="css/reset.css" /> -->
+
+<!-- 公共样式 -->
+<link rel="stylesheet" href="css/common.css" />
+    <!-- PC端导航样式 -->
+    <link rel="stylesheet" href="css/header.css" />
+    <!--页脚样式-->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 移动端导航样式 -->
+    <link rel="stylesheet" href="css/phone.css" />
+    <!-- 本页样式 -->
+    <link rel="stylesheet" href="css/about.css" />
+
+</head>
+<body>
+    <!-- 页头 -->
+    <div  class="header"></div>
+    <!-- 顶部大图 -->
+    <div class="container-fluid img-top1">
+        <div class="row">
+                <div>
+                    <!-- 这里是手机端响应式按钮菜单 -->
+                </div>
+        </div>
+    </div>
+    <!-- 企业简介 -->
+    <div class="container qyjj1 center">
+            <h3 class="heading">企业简介</h3>
+            <p class="paragraph">company profile</p>
+            <a href="javascript:;" class="linkblock"></a>
+
+    <!-- 视频窗口 -->
+            <div class="row">
+                <div class="video1 col-md-12">
+                    <i class="fa play fa-play-circle"></i>
+                </div>
+            </div>
+    </div>
+    <!--撑高度个一个空DIV-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="div1"></div>
+            </div>
+        </div>
+    </div>
+     <!--企业荣誉-->
+    <div class="container-fluid qyyy1">
+        <div class="container qyyy">
+            <div class="row qyyy1-1">
+               <p class="qyyy-1-p1">美食颂(北京)餐饮服务有限公司以团餐为主营业态，品牌化连锁经营；搭建了以B2B+B2C为模式的双轮驱动平台，为政府机关、企事业单位、大中专院校、医院、工厂员工餐厅和国家驻外机构，提供整体膳食解决方案。是一家集餐饮服务、餐饮投资、管理、咨询、为一体的综合性专业餐饮服务公司。
+               </p>
+                <p class="qyyy-1-p1">
+                    Food Sing (Beijing) Food and Beverage Service Co., Ltd. takes group meal business as the main business and adopts brand-oriented chain-store operations. The company has built a B2B+B2C driven platform to provide integrated dietary solutions for staff canteens and dining halls of state organs, public institutions, colleges, secondary schools, military academies, hospitals, enterprises and factories. The company is a comprehensive food and beverage service company that integrates food and beverage service, food and beverage investment, management and consulting.
+                </p>
+                <div class="row qyyy-1-2">
+                    <a href="#" class="btn">MORE</a>
+                </div>
+            </div>
+            <div class="row qyyy2-1">
+                <h4 class="tdjs">团队建设</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container qyll-top">
+        <div class="row">
+                <div class="qyll">
+                    <h3>企业理念</h3>
+                    <p class="text-uppercase">Enterprise idea</p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 yj-padding">
+                <h4 class="yj1">
+                    愿景：打造团膳知名品牌 致力国际美食生态
+                    <br />
+                    Vision: Building a Famous Group Meal Brand and Devoting Itself to Creating International Food Ecology <br />
+                    宗旨：品味全球美食 颂响健康生活<br />
+                    Tenet: Tasting Global Delicious Food and Advocating Healthy Life<br />
+                    核心价值观：追求阳光利润 享受坦荡幸福<br />
+                    Core Values: Pursuing Profits in a Honest and Transparent Manner and Enjoying Happiness in a Frank and Open Way<br />
+                    服务理念：将团膳客户体验和服务做到极致<br />
+                    Service Philosophy: Provide Perfect Group Meal Experience and Service <br />
+                    发展理念：共创 共享 共担<br />
+                    Development Concept: Co-creating Values, Sharing Interests and Assuming Joint Responsibility <br />
+
+
+
+
+                </h4>
+            </div>
+            <div class="col-md-6">
+                <div class="yj2">
+                    <div class="yj2-text">
+                        <h4>共创、共享、共担</h4>
+                        <h4 class="text-uppercase">Partner Recruitment</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 页尾 -->
+    <div class="footer"></div>
+    <br/>
+    <!--6、引入行为依赖文件-->
+    <script src="bootstrap/js/jquery-1.11.3.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <!--7、引入测试js文件-->
+   <!--  <script src="bootstrap/js/bootlint.js"></script> -->
+    <script>
+        $(".header").load("html/header.html");
+        $(".footer").load("html/footer.html");
+        bootlint.showLintReportForCurrentDocument([]);
+    </script>
+</body>
+</html>

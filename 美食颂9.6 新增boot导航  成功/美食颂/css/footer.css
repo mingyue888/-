@@ -1,0 +1,39 @@
+/*
+* @Author: anchen
+* @Date:   2017-09-20 01:46:12
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-09-20 01:46:30
+*/
+/* 页脚部分 */
+          /* 页脚 */
+                #footer{background:rgb(56, 56, 56);margin-top:5%;min-height:80px;}
+                .footer1{width:1170px;padding-top:3%;padding-bottom:2%;text-align:center;}
+                .padding{padding-left:0px;padding-right: 0px;}
+                .padding>.navbar-header{margin-right:0;margin-left: 0;}
+                #footer>.footer1>nav>div>div:nth-child(2)>ul{float:right!important;margin-right:-15px;}
+                #footer>.footer1>nav>div>div:nth-child(2)>ul>li{float:left;display:block;position:relative;}
+                #footer>.footer1>nav>div>div:nth-child(2)>ul>li>a{color:#fff;text-align:center;border-bottom:2px solid transparent;display:block;padding:10px 15px;text-decoration:none;}
+                #footer>.footer1>nav>div>div:nth-child(2)>ul>li>a:hover{border-bottom:2px solid rgba(241,140,27,1);color:rgb(97, 184, 80);}
+                /* 底部字体图标 */
+                    /* 四个圆 */
+                        .yuan{min-width:25px;min-height:25px;display:inline-block;border-radius:50%;text-align:center;line-height:24px;margin-right:10px;background:rgb(255,0,0);}
+                        #footer>.footer1>.text>a:nth-child(2){background:rgb(0, 102, 255);}
+                        #footer>.footer1>.text>a:nth-child(3){background:rgb(18, 230, 0);}
+                        #footer>.footer1>.text>a:nth-child(4){background:rgba(0,153,240,1);}
+                    /* 右侧a标签  */
+                    #footer>.footer1>.text>a:nth-child(5){color:#FFF;l}
+                    #footer>.footer1>.text>a>i{color:#fff;display:inline-block;font:normal normal normal 14px/1 FontAwesome;
+                    font-size:inherit;}
+                    #footer>.footer1>.text>a:nth-child(5):hover{color:#61B850;}
+                    /* a标签右外边距 */
+                    #footer>.footer1>:nth-child(2){min-height:40px;text-align:left;}
+                /* 地址 */
+                    #footer>.footer1  .dizhi{text-align:left;}
+                /* 地址→_→右边图 */
+                     #footer>.footer1>.row>.fontimg>.fontimg1{background:url("img/fontimg1.jpg")no-repeat ;width:120px;min-height:93px;margin-right:10px;display:inline-block;background-size:contain;background-position:50% 50%;}
+                     #footer>.footer1>.row>.fontimg>.fontimg2{background:url("img/fontimg2.jpg")no-repeat ;width:50px;min-height:90px;margin-right:10px;display:inline-block;background-size:40px 50px;background-position:50% 50%;}
+                     #footer>.footer1>.row>.fontimg>.fontimg3{background:url("img/fontimg3.jpg")no-repeat ;width:120px;min-height:90px;margin-right:10px;display:inline-block;background-size:105px 50px;background-position:50% 50%;}
+                /* 页尾公司声明 */
+                    #footer>.footer1>.font-text{margin-top:20px;}
+                     #footer>.footer1>.font-text>p{font-size:12px;display:inline-block;color:#787878;}
+                     #footer>.footer1>.font-text>p:first-child{margin-right:20px;}

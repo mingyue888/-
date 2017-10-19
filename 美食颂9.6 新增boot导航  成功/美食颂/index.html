@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- 1、指定基础语言 -->
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <!--2、指定视口信息-->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!--3、指定跨IE浏览器兼容性-->
+  <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+  <title></title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+  <!--5、引入两个兼容性文件老IE-->
+    <!--[if lt IE 9]>-->
+    <script src="bootstrap/js/html5shiv.min.js"></script>
+    <script src="bootstrap/js/respond.min.js"></script>
+    <!--[endif]-->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="font/css/font.css" />
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- PC端导航样式 -->
+    <link rel="stylesheet" href="css/header.css" />
+    <!--PC端页脚样式-->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- 移动端导航样式 -->
+    <link rel="stylesheet" href="css/phone.css" />
+</head>
+<style>
+        /* 导航下方 三个遮罩层 */
+            /* 遮罩层 */
+                #btnner-btm>.zzc>div>div>.qyjj{width:360px;height:380px;background-image:url(img/qyjj0.jpg); position:relative;background-position:50% 50%;background-size:cover;}
+            /* 遮罩层颜色 */
+                #btnner-btm>.zzc>div>div>div>div{position:absolute;width:30%;height:380px;background:rgba(97,184,80,0.8);
+                    transition:all 0.2s linear;padding-top:20%;padding-left:10%;}
+            /* hover时改变遮罩层宽度 */
+                #btnner-btm>.zzc>div>div>div>div:hover{width:100%;}
+            /* 遮罩层H4标签定位 */
+                #btnner-btm>.zzc>div>div>div>div>h4{position:absolute;color:rgb(255,255,255);line-height:1.5em;text-align:left;}
+                #btnner-btm>.zzc>div>div>div>a{color:rgb(255,255,255);position:absolute;bottom:20px;left:12%;}
+            /* 背景图 */
+                #btnner-btm>.zzc>.qyjj2>div>.qyjj{background-image:url(img/qyjj1.jpg);}
+                #btnner-btm>.zzc>.qyjj3>div>.qyjj{background-image:url(img/qyjj2.jpg);}
+        /* 合伙人计划 */
+                #partner{text-align:center;width:1170px;padding-top:8%;padding-bottom:8%;}
+                /* 第一块  底层*/
+                #partner>.row>div:first-child{height:500px;background:url("img/partner1.jpg");background-position:50% 50%; background-size:cover;}
+                /* 第一块  遮罩层*/
+                #partner>.row>div:first-child>div{height:120px;padding-left:26px;padding-top:10px;margin-top:auto;margin-bottom:0px;position:absolute;top:0px;
+                            right:0px;bottom:0px;left:0px;display:inline-block;background:rgba(97,184,80,0.8);color:#fff;text-align:left;}
+        /* 全球美食 */
+                #cate{text-align:center;}
+
+        /* 页脚部分 */
+                /* 底部字体图标 */
+                    /* 四个圆 */
+                        .yuan{min-width:25px;min-height:25px;display:inline-block;border-radius:50%;text-align:center;line-height:24px;margin-right:10px;background:rgb(255,0,0);}
+                        #footer>.footer1>.text>a:nth-child(2){background:rgb(0, 102, 255);}
+                        #footer>.footer1>.text>a:nth-child(3){background:rgb(18, 230, 0);}
+                        #footer>.footer1>.text>a:nth-child(4){background:rgba(0,153,240,1);}
+                    /* 右侧a标签  */
+                    #footer>.footer1>.text>a:nth-child(5){color:#FFF;l}
+                    #footer>.footer1>.text>a>i{color:#fff;display:inline-block;font:normal normal normal 14px/1 FontAwesome;
+                    font-size:inherit;}
+                    #footer>.footer1>.text>a:nth-child(5):hover{color:#61B850;}
+                    /* a标签右外边距 */
+                    #footer>.footer1>:nth-child(2){min-height:40px;text-align:left;}
+                /* 地址 */
+                    #footer>.footer1  .dizhi{text-align:left;}
+                /* 地址→_→右边图 */
+                     #footer>.footer1>.row>.fontimg>.fontimg1{background:url("img/fontimg1.jpg")no-repeat ;width:120px;min-height:93px;margin-right:10px;display:inline-block;background-size:contain;background-position:50% 50%;}
+                     #footer>.footer1>.row>.fontimg>.fontimg2{background:url("img/fontimg2.jpg")no-repeat ;width:50px;min-height:90px;margin-right:10px;display:inline-block;background-size:40px 50px;background-position:50% 50%;}
+                     #footer>.footer1>.row>.fontimg>.fontimg3{background:url("img/fontimg3.jpg")no-repeat ;width:120px;min-height:90px;margin-right:10px;display:inline-block;background-size:105px 50px;background-position:50% 50%;}
+                /* 页尾公司声明 */
+                    #footer>.footer1>.font-text{margin-top:20px;}
+                     #footer>.footer1>.font-text>p{font-size:12px;display:inline-block;color:#787878;}
+                     #footer>.footer1>.font-text>p:first-child{margin-right:20px;}
+            /* 以下为补充上方页面内容 */
+                /* 视差效果 */
+                    /* 视差效果 1*/
+                    #shicha1{background:url(img/shicha1.jpg)no-repeat fixed;background-size:cover;height:420px;}
+                    #shicha1>.center{background:rgba(0, 0, 0, 0.258824);height:100%;padding-top:7%;}
+                    #shicha1>.center>h3{font-weight:bold;margin-top:20px;margin-bottom:10px;}
+                    #shicha1>.center>p{margin-top:20px;margin-bottom:10px;font-size:24px;margin:0 0 10px;letter-spacing:3px;}
+                    /* 视差效果 2 */
+                    .shicha2{background:url(img/shicha2.jpg)no-repeat fixed;min-height:80px;background-size:cover;padding-top:5%; padding-bottom:5%;}
+                    /* 包住六幅图 居中 */
+                        /* 六图居中 */
+                    #shicha2>div{width:80%;margin:0 auto;}
+                        /*  六图背景 */
+                    #shicha2  .shicha2-img1{background:url("img/shicha2-img1.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                    #shicha2  .shicha2-img2{background:url("img/shicha2-img2.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                    #shicha2  .shicha2-img3{background:url("img/shicha2-img3.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                    #shicha2  .shicha2-img4{background:url("img/shicha2-img4.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                    #shicha2  .shicha2-img5{background:url("img/shicha2-img5.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                    #shicha2  .shicha2-img6{background:url("img/shicha2-img6.jpg")no-repeat;background-size:cover;height:240px;text-align:center;}
+                        /* 遮罩层 */
+                    #shicha2 >div .shichaimga{width:100%;height:100%;background:rgba(0, 0, 0, 0.439216);display:inline-block;color:#fff;
+                                    padding-top:25%;transition:all 0.2s linear;}
+                        /* 遮罩层hover变色 */
+                    #shicha2 .shichaimga:hover{padding-top:35%;color:#61B850;background:transparent;}
+                        /* h3 hover 高度 */
+                    #shicha2 .shichaimga>h3{line-height:1.1;font-weight:500;}
+                /* 合伙人招募     */
+                    /* 横向第二个 */
+                    #partner>div>:nth-child(2)>div{background:#61B850;height:240px;margin-bottom:20px;padding-top:8%;padding-left:10%;padding-right:10%;text-align:left;}
+                    #partner>div>:nth-child(2)>div>p{color:#fff;text-align:justify;font-size:16px;margin-bottom:10%;}
+                    #partner>div>:nth-child(2)>div>a{color:#fff;}
+                    #partner>div>:nth-child(2)>div>a:hover{color:#f18c1b;}
+                    /* 横向第三个 */
+                    #partner>div>:nth-child(3)>div{background:url("img/partner1.jpg") no-repeat;background-size:cover;height:240px;padding-top:8%;padding-left:10%;padding-right:10%;text-align:left;background-position:50%;}
+            /* 媒体查询 */
+                /* 媒体查询 991px */
+                /* 导航文字 */
+        @media(max-width: 991px){#header>.container>.header-nav>div:not(:nth-child(2))>a{font-size:13px;margin-right:10px;}}
+                /* 导航左侧 */
+        @media(max-width:991px){#header>.container>.header-nav>div:first-child{width:37%;}}
+                /* 导航中部 */
+        @media(max-width:991px){#header>.container>.header-nav>div:nth-child(2){padding-top:18px;padding-left:0px;padding-right:0px;width:20%;}}
+        @media(max-width:991px){#header>.container>.header-nav>div:nth-child(2)>img{display: block;
+                                        height: auto;
+                                        max-width: 100%;}}
+                /* 导航右侧 */
+        @media(max-width:991px){#header>.container>.header-nav>div:last-child{width:43%;padding-left:10px;padding-right:0px;}}
+        @media(max-width:768px){
+            #header{display: none !important;}
+        }
+        /*大于991PX时*/
+        @media(min-width:991px){
+            .carousel-inner{height:658px;}
+        }
+        </style>
+<body>
+
+    <!-- 头部导航 -->
+    <div class="header" id="head"></div>
+    <!-- banner -->
+<div id="myCarousel" class="carousel slide" data-interval="200" data-pause="null">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner"  >
+        <div class="item active">
+            <img src="img/banner1.jpg" alt="First slide">
+        </div>
+        <div class="item">
+            <img src="img/banner2.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+            <img src="img/banner1.jpg" alt="Third slide">
+        </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="carousel-control left" href="#myCarousel"
+       data-slide="prev">
+    </a>
+    <a class="carousel-control right" href="#myCarousel"
+       data-slide="next">
+    </a>
+</div>
+
+    <!-- banner下方内容 -->
+        <!-- 遮罩层三部曲-->
+            <div id="btnner-btm" class="container center">
+                <div class="row">
+                    <div class="col-md-12 center">
+                            <div>
+                                    <img src="img/1.png" />
+                                    <h4 class="heading">品味全球美食 颂响健康生活</h4>
+                                    <p class="paragraph">Savors the global good food to praise the loud health life</p>
+                                    <a href="javascript:;" class="linkblock"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="row zzc">
+                    <div class="col-md-4 center qyjj1">
+                        <div>
+                            <div class="qyjj">
+                                    <div>
+                                        <h4>企业简介<br />SYNOPSIS</h4>
+                                    </div>
+                                        <a href="javascript:;">MORE></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 center qyjj2">
+                        <div>
+                            <div class="qyjj">
+                                <div>
+                                    <h4>团队建设<br />TEAM BUILDING</h4>
+                                </div>
+                                    <a href="javascript:;">MORE></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 center qyjj3">
+                        <div>
+                            <div class="qyjj">
+                                <div>
+                                    <h4>企业荣誉<br />COMPANY HONOR</h4>
+                                </div>
+                                    <a href="javascript:;">MORE></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- 视差效果 1-->
+               <div class="container-fluid" id="shicha1">
+                    <div class="row bai center">
+                        <h3>FOOD SING</h3>
+                        <p>品味全球美食&nbsp&nbsp&nbsp颂响健康生活</p>
+                        <a href="javascript:;" class="linkblock"></a>
+                    </div>
+               </div>
+        <!-- 合伙人计划 -->
+            <div id="partner"  class="container center" >
+                <h3 class="heading">合伙人计划</h3>
+                <p class="paragraph">PARTNER PLAN</p>
+                <a href="javascript:;" class="linkblock"></a>
+                <div class="row">
+                        <div class="col-md-6">
+                            <div>
+                                    <h4 >合伙人招募</h4>
+                                    <h4>Partner Recuitment</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="" id="hehuoren1">
+                                      <p>
+                                          美食颂首推团膳行业合伙人管理模式，美食颂合伙人包括：管理层合伙人、管理业务合伙人、普通合伙人。企业战略目标清晰，望与有识之士真诚交流、共同探讨、增进共识、拓展业务、合作共赢！
+                                      </p>
+                                      <a href="javascript:;">MORE></a>
+                                </div>
+                        </div>
+                        <div class="col-md-6">
+                                    <div></div>
+                        </div>
+                </div>
+            </div>
+        <!-- 全球美食 -->
+            <div  id="cate" class="container">
+                    <h3 class="heading">全球美食</h3>
+                    <p class="paragraph">PARTNER PLAN</p>
+                    <a href="#" class="linkblock"></a>
+            </div>
+        <!-- 视差效果 2-->
+            <div class="container-fluid shicha2">
+                <div class="row" id="shicha2">
+                <!-- 一 -->
+                    <div>
+                    <!-- 一 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img1">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    <!-- 二 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img2">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    <!-- 三 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img3">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    <!-- 四 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img4">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    <!-- 五 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img5">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    <!-- 六 -->
+                        <div class="col-md-2">
+                            <div  class="shicha2-img6">
+                                <a href="javascript:;" class="shichaimga">
+                                    <h3>泰式咖喱蟹</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        <!-- 页脚 -->
+        <div class="footer"></div>
+
+  <!--6、引入 行为依赖 文件-->
+  <!-- <script src="bootstrap/js/jquery-3.2.1.min.js"></script> -->
+  <script src="bootstrap/js/jquery-1.11.3.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+  <!-- 轮播插件 -->
+  <!--<script src="data/pd-bd819bc0-abb4-11e4-8889-00163e001348/unslider-150203225543/unslider.min.js"></script>-->
+  <!-- 视差效果 -->
+    <!--<script src="data/parallax/parallax-master/"></script>-->
+
+  <script>
+      $(".header").load("html/header.html");
+      $(".footer").load("html/footer.html");
+        // 二级导航 文字变色
+        (function (){
+                var a=document.querySelectorAll("#header-top1 a");
+                var span="";
+                 for(i of a){
+                     i.onmouseover=function (){
+
+                     // span=this.querySelectorAll("span");
+                     for(l of span){
+                     l.style.color="#fff";}}}}
+        )();
+        (function (){
+                var a=document.querySelectorAll("#header-top1 a");
+                var span="";
+                 for(i of a){
+                     i.onmouseout=function (e){
+                     span=this.querySelectorAll("span");
+                     for(l of span){
+                     l.style.transition="all 0.2s linear";
+                     l.style.color="rgb(97, 184, 80)";}}}}
+        )();
+
+        // 合伙人计划
+                // 滚动坐标轴 进行动画事件
+                window.onscroll=function(){
+                    var top=document.body.scrollTop;
+                    var     i=document.getElementById("hehuoren1");
+                    if (top>1469) {
+                         i.style.bottom=30+'px';
+                    }
+
+                    // console.log(t);
+
+                }
+        // 二级导航  宽度隐藏
+        // 轮播
+        // 页脚图标字体
+        //  插入图标字体
+
+        //获取鼠标位置 获取Y轴   坐标
+            document.onmouseover=function(e){
+                var loc="y"+e.pageY;
+                console.log(loc);
+            }
+//        banner轮播
+      window.onload=function(){
+          $(document).ready(function(){
+              $('#myCarousel').carousel({interval:5000});//每隔5秒自动轮播
+          });
+      }();
+      // js插件
+        // http://www.jq22.com/jquery-info178
+  </script>
+</body>
+</html>
